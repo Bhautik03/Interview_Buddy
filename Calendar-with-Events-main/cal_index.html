@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!" />
+  <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../3056286/t1/favicon_io (10)/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../3056286/t1/favicon_io (10)/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../3056286/t1/favicon_io (10)/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <title>Interview Buddy/Calendar with Events</title>
+</head>
+<style>
+  .header {
+    margin-top: -39px;
+  }
+
+  .fixed-top {
+    position: relative;
+  }
+</style>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img class="image123" src="../3056286/t1/final-removebg-preview.png" class="img-fluid" alt="">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../mynetwork.html">My Network</a></li>
+          <li><a class="nav-link scrollto" href="../profile page/prof.html">My Profile</a>
+          </li>
+          <li><a href="../meeting page/mee_index.html">Meeting</a></li>
+          <li class="dropdown"><a href="#"><span>Expert Session</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../expert video.html">Expert Video</a></li>
+
+              <li><a href="../courses_page.html">Material</a></li>
+              <li><a href="../question.html">Quetion Bank</a></li>
+              <li><a href="../blog page/blog.html">Blog</a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href=""> </a></li>
+          <li><a class="nav-link scrollto" class="a23" href="../Calendar-with-Events-main/cal_index.html"><img
+                src="../3056286/calendar.png" alt="calander" width="20px"></a></li>
+          <li><a class="getstarted scrollto" href="../login page/log_index.html">LOGIN / SIGN UP</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <div class="container">
+    <div class="left">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">december 2015</div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+        <div class="goto-today">
+          <div class="goto">
+            <input type="text" placeholder="mm/yyyy" class="date-input" />
+            <button class="goto-btn">Go</button>
+          </div>
+          <button class="today-btn">Today</button>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="today-date">
+        <div class="event-day">wed</div>
+        <div class="event-date">12th december 2022</div>
+      </div>
+      <div class="events"></div>
+      <div class="add-event-wrapper">
+        <div class="add-event-header">
+          <div class="title">Add Event</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-event-body">
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Name" class="event-name" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Time From" class="event-time-from" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Time To" class="event-time-to" />
+          </div>
+        </div>
+        <div class="add-event-footer">
+          <button class="add-event-btn">Add Event</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-event">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+
+</html>
+
